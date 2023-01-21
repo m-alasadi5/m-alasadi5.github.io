@@ -403,19 +403,21 @@
             <!-- form -->
             <form name="contactForm" id="contactForm" method="POST" action="https://api.web3forms.com/submit">
 				<input type="hidden" name="access_key" value="19bf331b-7b57-4c7e-9288-1a0c21efa986">
+				<input type="hidden" name="redirect" value="https://web3forms.com/success">
+
       			<fieldset>
 
                   <div class="form-field">
- 						   <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
+ 						   <input name="First Name" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
                   </div>
                   <div class="form-field">
-	      			   <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
+	      			   <input name="email" type="email" id="contactEmail" placeholder="Email" value="" required="">
 	               </div>
                   <div class="form-field">
 	     				   <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
 	               </div>                       
                   <div class="form-field">
-	                 	<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required="" value=""></textarea>
+	                 	<textarea name="message" id="contactMessage" placeholder="message" rows="10" cols="50" required="" value=""></textarea>
 	               </div>                      
                  <div class="form-field">
                      <button class="submitform" type="submit">Submit</button>
@@ -521,6 +523,12 @@
    <script src="js/jquery-2.1.3.min.js"></script>
    <script src="js/plugins.js"></script>
    <script src="js/main.js"></script>
+
+
+
+
+
+
 
 </body>
 
