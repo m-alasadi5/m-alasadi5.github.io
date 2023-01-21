@@ -74,7 +74,7 @@ body {
 	font-family: "lora-regular", serif;
 	font-size: 1.7rem;
 	line-height: 3rem;
-	color: #6e6e6e;
+	color: black;
 }
 
 /**
@@ -1096,7 +1096,7 @@ header .row {
 header .top-bar {
 	display: block;
 	background: #000000;
-	min-width: 220px;
+	min-width: 170px;
 	min-height: 66px;
 	position: absolute;
 	left: 90px;
@@ -1626,8 +1626,27 @@ header .logo a {
 }
 
 #resume .resume-header {
-	text-align: center;
+	
 }
+
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */
+
+	.resume-title{
+
+		margin-left: 24%;
+	}
+
+	.resume-title2{
+
+		margin-left: 275px;
+	}
+
+
+}
+
+
+
+
 #resume .resume-header h2 {
 	color: #FF0077;
 }
@@ -2595,5 +2614,19 @@ footer .copyright span:last-child::after {
 #go-top a:hover {
 	background: #000000;
 }
+
+.menu-header{
+
+margin-top: 19.1px;	
+
+margin-left: 70px;
+
+color:white;
+
+font-size: 1.2em;
+
+}
+
+
 
 /*# sourceMappingURL=main.css.map */
