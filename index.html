@@ -8,7 +8,7 @@
     <!--- basic page needs test
    ================================================== -->
     <meta charset="utf-8" />
-    <title>Max Alasadi</title>
+    <title>Mustafa Alasadi</title>
     <meta name="description" content="" />
     <meta name="author" content="" />
 
@@ -78,6 +78,10 @@
               </li>
 
               <li>
+                <a class="smoothscroll" href="#projects" title="">Projects</a>
+              </li>
+
+              <li>
                 <a class="smoothscroll" href="#services" title="">Skills</a>
               </li>
               <li>
@@ -102,12 +106,12 @@
           <div class="col-twelve">
             <!--  <h5>Hello, World.</h5>  -->
             
-            <h1>Max Alasadi</h1>
+            <h1>Mustafa Alasadi</h1>
 
             <p class="intro-position">
               <span>Tech Professional</span>
             
-              <span>Web Developer</span>
+              <span>Software Engineer</span>
             </p>
 
             <a class="button stroke smoothscroll" href="#resume" title=""
@@ -151,7 +155,7 @@
                 <p>
                   -Support Engineer at LumApps – the social intranet
                   recommended by Google. <br />
-                </p>
+                </p> 
               </div>
             </div>
             <!-- /timeline-block -->
@@ -163,19 +167,39 @@
 
               <div class="timeline-header">
                 <h3>Support Engineer</h3>
-                <p>September 2022 - Present</p>
+                <p>September 2022 - February 2023</p>
               </div>
 
               <div class="timeline-content">
                 <h4>Rhapsody</h4>
-                <p>
+                  <p>
                   -Support Engineer at Rhapsody – the provider of industry
                   leading data interoperability solutions for healthcare providers.
                   <br />
-                </p>
+                </p> 
               </div>
             </div>
             <!-- /timeline-block -->
+
+                        <div class="timeline-block">
+              <div class="timeline-ico">
+                <i class="fa fa-briefcase"></i>
+              </div>
+
+              <div class="timeline-header">
+                <h3>AI Specialist</h3>
+                <p>June 2024 - August 2025</p>
+              </div>
+
+              <div class="timeline-content">
+                <h4>RWS Group</h4>
+                <p>
+                  -Contractor for Meta <br />
+                </p> 
+              </div>
+            </div>
+
+
           </div>
           <!-- /timeline-wrap -->
         </div>
@@ -231,6 +255,246 @@
       <!-- /resume-timeline -->
     </section>
     <!-- /features -->
+
+    <!-- projects Section
+   ================================================== -->
+    <section id="projects">
+
+      <style>
+        /* ── Projects Section ── */
+        #projects {
+          padding-top: 9rem;
+          padding-bottom: 16rem;
+          position: relative;
+          /* Deep navy-to-teal gradient — distinct from all other sections */
+          background: #1a2a3a;
+          background: -webkit-linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+          background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+        }
+
+        /* Subtle SVG dot-grid pattern overlay for texture */
+        #projects::before {
+          content: '';
+          position: absolute;
+          top: 0; left: 0; right: 0; bottom: 0;
+          background-image: radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px);
+          background-size: 28px 28px;
+          pointer-events: none;
+        }
+
+        #projects .overlay {
+          display: none;
+        }
+
+        #projects .row {
+          position: relative;
+          z-index: 1;
+        }
+
+        #projects .section-intro h5 {
+          color: #ff0077;
+        }
+
+        #projects .section-intro h1 {
+          color: #fff;
+        }
+
+        #projects .section-intro .lead {
+          color: rgba(255,255,255,0.35);
+        }
+
+        .project-card-wrap {
+          max-width: 920px;
+          margin: 0 auto;
+        }
+
+        .project-card {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row;
+          -webkit-box-align: start;
+              -ms-flex-align: start;
+                  align-items: flex-start;
+          gap: 2.4rem;
+          background: #fff;
+          border-radius: 6px;
+          padding: 2.4rem 2.8rem;
+          -webkit-box-shadow: 0 8px 40px rgba(0,0,0,0.35);
+                  box-shadow: 0 8px 40px rgba(0,0,0,0.35);
+        }
+
+        .project-card-images {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row;
+          gap: 0.75rem;
+          -ms-flex-negative: 0;
+              flex-shrink: 0;
+        }
+
+        .project-card-images a {
+          display: block;
+          border-radius: 10px;
+          overflow: hidden;
+          -webkit-transition: -webkit-transform 0.2s ease, -webkit-box-shadow 0.2s ease;
+                  transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .project-card-images a:hover {
+          -webkit-transform: translateY(-3px);
+                  transform: translateY(-3px);
+          -webkit-box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+                  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+        }
+
+        .project-card-images img {
+          width: 95px;
+          height: auto;
+          display: block;
+          border-radius: 10px;
+        }
+
+        .project-card-info {
+          -webkit-box-flex: 1;
+              -ms-flex: 1;
+                  flex: 1;
+          padding-top: 0.2rem;
+        }
+
+        h3.project-title {
+          font-size: 2.2rem;
+          color: #313131;
+          margin-bottom: 0.5rem;
+        }
+
+        p.project-meta {
+          font-size: 1.3rem;
+          color: #888;
+          margin-bottom: 1rem;
+        }
+
+        p.project-desc {
+          font-size: 1.5rem;
+          line-height: 1.8;
+          color: #666;
+          margin-bottom: 1.8rem;
+        }
+
+        a.project-btn {
+          font-size: 1.2rem;
+          padding: 0.85rem 2.2rem;
+          display: inline-block;
+          color: #313131;
+          border-color: #888;
+        }
+
+        a.project-btn:hover {
+          border-color: #ff0077;
+          color: #ff0077;
+        }
+
+        /* ── Tablet (≤ 900px) ── */
+        @media only screen and (max-width: 900px) {
+          .project-card {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            text-align: center;
+            padding: 2rem 1.8rem;
+            gap: 2rem;
+          }
+          .project-card-images {
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+          }
+        }
+
+        /* ── Mobile (≤ 600px) ── */
+        @media only screen and (max-width: 600px) {
+          .project-card {
+            padding: 1.6rem 1.2rem;
+            gap: 1.6rem;
+          }
+          .project-card-images img {
+            width: 75px;
+          }
+          h3.project-title {
+            font-size: 1.9rem;
+          }
+          p.project-desc {
+            font-size: 1.35rem;
+          }
+        }
+
+        /* ── Small mobile (≤ 400px) ── */
+        @media only screen and (max-width: 400px) {
+          .project-card-images img {
+            width: 62px;
+          }
+          .project-card-images {
+            gap: 0.5rem;
+          }
+        }
+      </style>
+
+      <div class="overlay"></div>
+
+      <div class="row section-intro">
+        <div class="col-twelve">
+          <h5>My Latest</h5>
+          <h1>Projects</h1>
+          <p class="lead">--------------------------------------------</p>
+        </div>
+      </div>
+
+      <div class="row" style="padding-top: 1rem;">
+        <div class="col-twelve">
+          <div class="project-card-wrap">
+
+            <div class="project-card">
+              <div class="project-card-images">
+                <a href="https://play.google.com/store/apps/details?id=com.gridcount.livewallpaper" target="_blank" rel="noopener noreferrer">
+                  <img src="images/android_1_1.png" alt="One Life Calendar Wallpaper – Track the year" />
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.gridcount.livewallpaper" target="_blank" rel="noopener noreferrer">
+                  <img src="images/android_1_2.png" alt="One Life Calendar Wallpaper – Life in weeks" />
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.gridcount.livewallpaper" target="_blank" rel="noopener noreferrer">
+                  <img src="images/android_1_3.png" alt="One Life Calendar Wallpaper – Goal countdown" />
+                </a>
+              </div>
+
+              <div class="project-card-info">
+                <h3 class="project-title">One Life Calendar Wallpaper</h3>
+                <p class="project-meta"><i class="fa-brands fa-android" style="color:#ff0077;"></i>&nbsp; Android App &nbsp;·&nbsp; Personalization</p>
+                <p class="project-desc">
+                  A live wallpaper app that turns your home &amp; lock screen into a visual reminder of time. Track your life in weeks, follow the year day by day, or count down to any personal goal — updated automatically in real time.
+                </p>
+                <a class="button stroke project-btn" href="https://play.google.com/store/apps/details?id=com.gridcount.livewallpaper" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-google-play"></i>&nbsp; View on Google Play
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- /projects -->
 
     <!-- services Section
    ================================================== -->
@@ -458,7 +722,7 @@
 
           <h5>Email Me At</h5>
 
-          <p style="color: white">malasadi578@gmail.com</p>
+          <p style="color: white">malasadi277@gmail.com</p>
         </div>
       </div>
       <!-- /contact-info -->
@@ -482,7 +746,7 @@
 		-->
 
         <div style="text-align: center">
-          <span style="color: burlywood">Max Alasadi - 2023</span>
+          <span style="color: burlywood">Mustafa Alasadi - 2025</span>
         </div>
 
         <div id="go-top">
